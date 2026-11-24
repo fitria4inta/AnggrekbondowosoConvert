@@ -1,94 +1,144 @@
-<div style="width: 1440px; height: 2519px; position: relative; background: white; overflow: hidden">
-  <!-- Navbar & Logo Ungu -->
-  <img style="width: 253px; height: 96px; left: 17px; top: 33px; position: absolute" src="assets/logo_ungu.png" />
-  <div style="width: 208px; height: 47px; left: 1179px; top: 61px; position: absolute; background: #2D3E35; border-radius: 100px"></div>
-  <div style="left: 507px; top: 65px; position: absolute; color: #2D3E35; font-size: 28px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Beranda</div>
-  <div style="left: 684px; top: 66px; position: absolute; color: #2D3E35; font-size: 28px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Katalog</div>
-  <div style="left: 831px; top: 65px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Perawatan</div>
-  <div style="left: 1021px; top: 67px; position: absolute; color: #2D3E35; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Tentang</div>
-  <div style="left: 1200px; top: 70px; position: absolute; color: white; font-size: 25px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Hubungi Kami</div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hubungi Kami - Anggrek Bondowoso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inria+Serif:wght@400;700&family=Inter:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; overflow-x: hidden; background: #ffffff; }
+    #fit-container { width: 100%; overflow: hidden; display: flex; justify-content: center; }
+    #page-canvas {
+      width: 1440px;
+      height: 2519px;
+      position: relative;
+      background: white;
+      overflow: hidden;
+      transform-origin: top left;
+      flex-shrink: 0;
+    }
+    .clickable { cursor: pointer; transition: opacity 0.2s; }
+    .clickable:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
+<div id="fit-container">
+  <div id="page-canvas">
+    <!-- Navbar & Logo Ungu -->
+    <img class="clickable" onclick="location.href='beranda.html'" style="width: 253px; height: 96px; left: 17px; top: 33px; position: absolute" src="assets/logo_ungu.png" />
+    <div class="clickable" onclick="location.href='hubungikami.html'" style="width: 208px; height: 47px; left: 1179px; top: 61px; position: absolute; background: #2D3E35; border-radius: 100px"></div>
+    <div class="clickable" onclick="location.href='beranda.html'" style="left: 507px; top: 65px; position: absolute; color: #2D3E35; font-size: 28px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Beranda</div>
+    <div class="clickable" onclick="location.href='katalogproduk.html'" style="left: 684px; top: 66px; position: absolute; color: #2D3E35; font-size: 28px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Katalog</div>
+    <div class="clickable" onclick="location.href='perawatan.html'" style="left: 831px; top: 65px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Perawatan</div>
+    <div class="clickable" onclick="location.href='tentangkami.html'" style="left: 1021px; top: 67px; position: absolute; color: #2D3E35; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Tentang</div>
+    <div class="clickable" onclick="location.href='hubungikami.html'" style="left: 1200px; top: 70px; position: absolute; color: white; font-size: 25px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Hubungi Kami</div>
 
-  <!-- Judul & Subjudul -->
-  <div style="width: 780px; height: 141px; left: 325px; top: 225px; position: absolute; text-align: center; color: #7D65A9; font-size: 40px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">HUBUNGI KAMI</div>
-  <div style="width: 875px; height: 87px; left: 282px; top: 322px; position: absolute; text-align: center; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">"Terhubung langsung dengan kami melalui saluran komunikasi dan media sosial di bawah ini."</div>
+    <!-- Judul & Subjudul -->
+    <div style="width: 780px; height: 141px; left: 325px; top: 225px; position: absolute; text-align: center; color: #7D65A9; font-size: 40px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">HUBUNGI KAMI</div>
+    <div style="width: 875px; height: 87px; left: 282px; top: 322px; position: absolute; text-align: center; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">"Terhubung langsung dengan kami melalui saluran komunikasi dan media sosial di bawah ini."</div>
 
-  <!-- Kartu 1: Alamat Utama -->
-  <div style="width: 1261px; height: 123px; left: 96px; top: 503px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
-  <img style="width: 76px; height: 76px; left: 190px; top: 527px; position: absolute; object-fit: contain" src="assets/lokasi.png" />
-  <div style="left: 318px; top: 526px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Alamat Utama</div>
-  <div style="width: 815px; height: 91px; left: 320px; top: 564px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Jl. KH. Agus Salim Gg. I No. 03, Bondowoso, Jawa Timur</div>
+    <!-- Kartu 1: Alamat Utama -->
+    <div class="clickable" onclick="window.open('https://maps.google.com/?q=Jl.+KH.+Agus+Salim+Gg.+I+No.+03,+Bondowoso,+Jawa+Timur', '_blank')" style="width: 1261px; height: 123px; left: 96px; top: 503px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
+    <img style="width: 76px; height: 76px; left: 190px; top: 527px; position: absolute; object-fit: contain; pointer-events: none" src="assets/lokasi.png" />
+    <div style="left: 318px; top: 526px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word; pointer-events: none">Alamat Utama</div>
+    <div style="width: 815px; height: 91px; left: 320px; top: 564px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word; pointer-events: none">Jl. KH. Agus Salim Gg. I No. 03, Bondowoso, Jawa Timur</div>
 
-  <!-- Kartu 2: Alamat Email -->
-  <div style="width: 1261px; height: 123px; left: 96px; top: 651px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
-  <img style="width: 76px; height: 76px; left: 192px; top: 675px; position: absolute; object-fit: contain" src="assets/email.png" />
-  <div style="left: 315px; top: 677px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Alamat Email</div>
-  <div style="width: 507px; left: 315px; top: 716px; position: absolute; color: #7D65A9; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">anggrekbondowoso@gmail.com</div>
+    <!-- Kartu 2: Alamat Email -->
+    <div class="clickable" onclick="location.href='mailto:anggrekbondowoso@gmail.com'" style="width: 1261px; height: 123px; left: 96px; top: 651px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
+    <img style="width: 76px; height: 76px; left: 192px; top: 675px; position: absolute; object-fit: contain; pointer-events: none" src="assets/email.png" />
+    <div style="left: 315px; top: 677px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word; pointer-events: none">Alamat Email</div>
+    <div style="width: 507px; left: 315px; top: 716px; position: absolute; color: #7D65A9; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word; pointer-events: none">anggrekbondowoso@gmail.com</div>
 
-  <!-- Kartu 3: Nomor Telepon -->
-  <div style="width: 1261px; height: 124px; left: 96px; top: 798px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
-  <img style="width: 76px; height: 76px; left: 192px; top: 822px; position: absolute; object-fit: contain" src="assets/telpon.png" />
-  <div style="left: 315px; top: 817px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Nomor Telepon</div>
-  <div style="width: 373px; height: 35px; left: 274px; top: 863px; position: absolute; text-align: center; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">(+62) 852-3376-6957</div>
+    <!-- Kartu 3: Nomor Telepon -->
+    <div class="clickable" onclick="window.open('https://wa.me/6285233766957', '_blank')" style="width: 1261px; height: 124px; left: 96px; top: 798px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
+    <img style="width: 76px; height: 76px; left: 192px; top: 822px; position: absolute; object-fit: contain; pointer-events: none" src="assets/telpon.png" />
+    <div style="left: 315px; top: 817px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word; pointer-events: none">Nomor Telepon</div>
+    <div style="width: 373px; height: 35px; left: 274px; top: 863px; position: absolute; text-align: center; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word; pointer-events: none">(+62) 852-3376-6957</div>
 
-  <!-- Kartu 4: Instagram -->
-  <div style="width: 1261px; height: 123px; left: 96px; top: 946px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
-  <img style="width: 77px; height: 77px; left: 194px; top: 969px; position: absolute; object-fit: contain" src="assets/instagram.png" />
-  <div style="left: 318px; top: 967px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Instagram</div>
-  <div style="width: 373px; height: 35px; left: 290px; top: 1015px; position: absolute; text-align: center; color: #7D65A9; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">@anggrekbondowoso</div>
+    <!-- Kartu 4: Instagram -->
+    <div class="clickable" onclick="window.open('https://instagram.com/anggrekbondowoso', '_blank')" style="width: 1261px; height: 123px; left: 96px; top: 946px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
+    <img style="width: 77px; height: 77px; left: 194px; top: 969px; position: absolute; object-fit: contain; pointer-events: none" src="assets/instagram.png" />
+    <div style="left: 318px; top: 967px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word; pointer-events: none">Instagram</div>
+    <div style="width: 373px; height: 35px; left: 290px; top: 1015px; position: absolute; text-align: center; color: #7D65A9; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word; pointer-events: none">@anggrekbondowoso</div>
 
-  <!-- Kartu 5: TikTok -->
-  <div style="width: 1261px; height: 123px; left: 96px; top: 1094px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
-  <img style="width: 77px; height: 77px; left: 194px; top: 1117px; position: absolute; object-fit: contain" src="assets/tik-tok.png" />
-  <div style="left: 318px; top: 1117px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Tiktok</div>
-  <div style="width: 373px; height: 38px; left: 293px; top: 1156px; position: absolute; text-align: center; color: #7D65A9; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">@anggrek_bondowoso</div>
+    <!-- Kartu 5: TikTok -->
+    <div class="clickable" onclick="window.open('https://tiktok.com/@anggrek_bondowoso', '_blank')" style="width: 1261px; height: 123px; left: 96px; top: 1094px; position: absolute; background: white; box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); border-radius: 25px"></div>
+    <img style="width: 77px; height: 77px; left: 194px; top: 1117px; position: absolute; object-fit: contain; pointer-events: none" src="assets/tik-tok.png" />
+    <div style="left: 318px; top: 1117px; position: absolute; color: black; font-size: 32px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word; pointer-events: none">Tiktok</div>
+    <div style="width: 373px; height: 38px; left: 293px; top: 1156px; position: absolute; text-align: center; color: #7D65A9; font-size: 32px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word; pointer-events: none">@anggrek_bondowoso</div>
 
-  <!-- Bagian Maps -->
-  <div style="width: 1256px; height: 437px; left: 101px; top: 1305px; position: absolute; background: white; box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.25); border-radius: 16px; overflow: hidden"></div>
-  <img style="width: 1256px; height: 437px; left: 101px; top: 1305px; position: absolute; object-fit: cover; border-radius: 16px" src="assets/map.png" />
-  <img style="width: 95px; height: 95px; left: 536px; top: 1472px; position: absolute; object-fit: contain" src="assets/locmerah.png" />
-  <div style="width: 370px; height: 54px; left: 652px; top: 1463px; position: absolute; background: white; box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.25); border-radius: 19px"></div>
-  <div style="width: 376px; height: 46px; left: 646px; top: 1472px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Jl. KH. Agus Salim Gg. I No. 03</div>
+    <!-- Bagian Maps -->
+    <div style="width: 1256px; height: 437px; left: 101px; top: 1305px; position: absolute; background: white; box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.25); border-radius: 16px; overflow: hidden"></div>
+    <img class="clickable" onclick="window.open('https://maps.google.com/?q=Jl.+KH.+Agus+Salim+Gg.+I+No.+03,+Bondowoso,+Jawa+Timur', '_blank')" style="width: 1256px; height: 437px; left: 101px; top: 1305px; position: absolute; object-fit: cover; border-radius: 16px" src="assets/map.png" />
+    <img style="width: 95px; height: 95px; left: 536px; top: 1472px; position: absolute; object-fit: contain; pointer-events: none" src="assets/locmerah.png" />
+    <div style="width: 370px; height: 54px; left: 652px; top: 1463px; position: absolute; background: white; box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.25); border-radius: 19px; pointer-events: none"></div>
+    <div style="width: 376px; height: 46px; left: 646px; top: 1472px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word; pointer-events: none">Jl. KH. Agus Salim Gg. I No. 03</div>
 
-  <!-- Tombol Lihat di Google Maps -->
-  <div style="width: 512px; height: 69px; left: 477px; top: 1797px; position: absolute; background: #2D3E34; border-radius: 20px"></div>
-  <div style="left: 505px; top: 1808px; position: absolute; color: white; font-size: 36px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">LIHAT DI GOOGLE MAPS</div>
+    <!-- Tombol Lihat di Google Maps -->
+    <div class="clickable" onclick="window.open('https://maps.google.com/?q=Jl.+KH.+Agus+Salim+Gg.+I+No.+03,+Bondowoso,+Jawa+Timur', '_blank')" style="width: 512px; height: 69px; left: 477px; top: 1797px; position: absolute; background: #2D3E34; border-radius: 20px"></div>
+    <div class="clickable" onclick="window.open('https://maps.google.com/?q=Jl.+KH.+Agus+Salim+Gg.+I+No.+03,+Bondowoso,+Jawa+Timur', '_blank')" style="left: 505px; top: 1808px; position: absolute; color: white; font-size: 36px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">LIHAT DI GOOGLE MAPS</div>
 
-  <!-- ==================== FOOTER ==================== -->
-  <div style="width: 1440px; height: 600px; left: 0px; top: 1920px; position: absolute; background: #2D3E35"></div>
-  <img style="width: 280px; height: 98px; left: 50px; top: 2071px; position: absolute" src="assets/logo_hijau.png" />
-  <div style="width: 443px; height: 23px; left: 72px; top: 2207px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Indahnya Anggrek, Tumbuh Dari Perhatian</div>
-  <div style="width: 314px; height: 67px; left: 73px; top: 2254px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Menyediakan tanaman anggrek pilihan<br/>untuk mempercantik rumah dan lingkungan Anda.</div>
+    <!-- ==================== FOOTER ==================== -->
+    <div style="width: 1440px; height: 600px; left: 0px; top: 1920px; position: absolute; background: #2D3E35"></div>
+    <img style="width: 280px; height: 98px; left: 50px; top: 2071px; position: absolute" src="assets/logo_hijau.png" />
+    <div style="width: 443px; height: 23px; left: 72px; top: 2207px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Indahnya Anggrek, Tumbuh Dari Perhatian</div>
+    <div style="width: 314px; height: 67px; left: 73px; top: 2254px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Menyediakan tanaman anggrek pilihan<br/>untuk mempercantik rumah dan lingkungan Anda.</div>
 
-  <!-- Halaman Lain -->
-  <div style="width: 150px; height: 22px; left: 433px; top: 2081px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">HALAMAN LAIN</div>
-  <div style="width: 97px; height: 22px; left: 433px; top: 2121px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Beranda</div>
-  <div style="width: 97px; height: 23px; left: 433px; top: 2157px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Katalog</div>
-  <div style="width: 97px; height: 23px; left: 433px; top: 2193px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Perawatan</div>
-  <div style="width: 120px; height: 22px; left: 433px; top: 2230px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Tentang</div>
-  <div style="width: 97px; height: 22px; left: 433px; top: 2264px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Kontak Kami</div>
+    <!-- Halaman Lain -->
+    <div style="width: 150px; height: 22px; left: 433px; top: 2081px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">HALAMAN LAIN</div>
+    <div class="clickable" onclick="location.href='beranda.html'" style="width: 97px; height: 22px; left: 433px; top: 2121px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Beranda</div>
+    <div class="clickable" onclick="location.href='katalogproduk.html'" style="width: 97px; height: 23px; left: 433px; top: 2157px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Katalog</div>
+    <div class="clickable" onclick="location.href='perawatan.html'" style="width: 97px; height: 23px; left: 433px; top: 2193px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Perawatan</div>
+    <div class="clickable" onclick="location.href='tentangkami.html'" style="width: 120px; height: 22px; left: 433px; top: 2230px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Tentang</div>
+    <div class="clickable" onclick="location.href='hubungikami.html'" style="width: 97px; height: 22px; left: 433px; top: 2264px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Kontak Kami</div>
 
-  <!-- Kontak -->
-  <div style="width: 149px; height: 22px; left: 653px; top: 2081px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">KONTAK</div>
-  <div style="width: 24px; height: 24px; left: 653px; top: 2129px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 657px; top: 2133px; position: absolute" src="assets/telp.png" />
-  <div style="width: 305px; height: 22px; left: 687px; top: 2133px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">085233766957</div>
+    <!-- Kontak -->
+    <div style="width: 149px; height: 22px; left: 653px; top: 2081px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">KONTAK</div>
+    <div style="width: 24px; height: 24px; left: 653px; top: 2129px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 657px; top: 2133px; position: absolute" src="assets/telp.png" />
+    <div style="width: 305px; height: 22px; left: 687px; top: 2133px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">085233766957</div>
 
-  <div style="width: 24px; height: 24px; left: 653px; top: 2175px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 657px; top: 2179px; position: absolute" src="assets/ig.png" />
-  <div style="width: 378px; height: 23px; left: 687px; top: 2177px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">anggrekbondowoso@gmail.com</div>
+    <div style="width: 24px; height: 24px; left: 653px; top: 2175px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 657px; top: 2179px; position: absolute" src="assets/ig.png" />
+    <div style="width: 378px; height: 23px; left: 687px; top: 2177px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">anggrekbondowoso@gmail.com</div>
 
-  <!-- Sosial Media -->
-  <div style="width: 150px; height: 22px; left: 999px; top: 2081px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">SOSIAL MEDIA</div>
-  <div style="width: 24px; height: 24px; left: 1000px; top: 2129px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 1004px; top: 2133px; position: absolute" src="assets/telp.png" />
-  <div style="width: 306px; height: 22px; left: 1033px; top: 2133px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
+    <!-- Sosial Media -->
+    <div style="width: 150px; height: 22px; left: 999px; top: 2081px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">SOSIAL MEDIA</div>
+    <div style="width: 24px; height: 24px; left: 1000px; top: 2129px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 1004px; top: 2133px; position: absolute" src="assets/telp.png" />
+    <div style="width: 306px; height: 22px; left: 1033px; top: 2133px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
 
-  <div style="width: 24px; height: 24px; left: 1000px; top: 2175px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 1004px; top: 2179px; position: absolute" src="assets/ig.png" />
-  <div style="width: 379px; height: 23px; left: 1033px; top: 2177px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
+    <div style="width: 24px; height: 24px; left: 1000px; top: 2175px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 1004px; top: 2179px; position: absolute" src="assets/ig.png" />
+    <div style="width: 379px; height: 23px; left: 1033px; top: 2177px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
 
-  <!-- Garis Pembatas, Copyright & Floating WA -->
-  <div style="width: 1143.90px; height: 0px; left: 71.75px; top: 2372.02px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
-  <div style="width: 481px; height: 22px; left: 72px; top: 2397px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Copyright 2026 Anggrek Bondowoso. All Rights Reserved.</div>
-  <img style="width: 115px; height: 115px; left: 1262px; top: 2371px; position: absolute; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 50px" src="assets/wa.png" />
+    <!-- Garis Pembatas, Copyright & Floating WA -->
+    <div style="width: 1143.90px; height: 0px; left: 71.75px; top: 2372.02px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+    <div style="width: 481px; height: 22px; left: 72px; top: 2397px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Copyright 2026 Anggrek Bondowoso. All Rights Reserved.</div>
+    <img class="clickable" onclick="window.open('https://wa.me/6285233766957', '_blank')" style="width: 115px; height: 115px; left: 1262px; top: 2371px; position: absolute; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 50px" src="assets/wa.png" />
+  </div>
 </div>
+
+<script>
+  function fitToScreen() {
+    const canvas = document.getElementById('page-canvas');
+    const container = document.getElementById('fit-container');
+    const screenW = document.documentElement.clientWidth;
+    if (screenW < 1440) {
+      const ratio = screenW / 1440;
+      canvas.style.transform = `scale(${ratio})`;
+      container.style.justifyContent = 'flex-start';
+      container.style.height = (2519 * ratio) + 'px';
+    } else {
+      canvas.style.transform = 'none';
+      container.style.justifyContent = 'center';
+      container.style.height = '2519px';
+    }
+  }
+  window.addEventListener('resize', fitToScreen);
+  fitToScreen();
+</script>
+</body>
+</html>

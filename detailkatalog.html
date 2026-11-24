@@ -1,86 +1,143 @@
-<div style="width: 1440px; height: 2562px; position: relative; background: white; overflow: hidden">
-  <!-- Navbar -->
-  <div style="width: 1437px; height: 130px; left: 75px; top: -25px; position: absolute; overflow: hidden">
-    <div style="width: 148px; height: 47px; left: 593px; top: 66px; position: absolute; background: #2D3E35; border-radius: 100px"></div>
-    <div style="left: 617px; top: 69px; position: absolute; color: white; font-size: 28px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Katalog</div>
-    <div style="left: 440px; top: 68px; position: absolute; color: black; font-size: 28px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Beranda</div>
-    <div style="left: 764px; top: 68px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Perawatan</div>
-    <div style="left: 954px; top: 70px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Tentang</div>
-    <div style="left: 1143px; top: 75px; position: absolute; color: black; font-size: 25px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Hubungi Kami</div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Detail Produk - Anggrek Bondowoso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inria+Serif:wght@400;700&family=Inter:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; overflow-x: hidden; background: #ffffff; }
+    #fit-container { width: 100%; overflow: hidden; display: flex; justify-content: center; }
+    #page-canvas {
+      width: 1440px;
+      height: 2562px;
+      position: relative;
+      background: white;
+      overflow: hidden;
+      transform-origin: top left;
+      flex-shrink: 0;
+    }
+    .clickable { cursor: pointer; transition: opacity 0.2s, transform 0.2s; }
+    .clickable:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
+<div id="fit-container">
+  <div id="page-canvas">
+    <!-- Navbar -->
+    <div style="width: 1437px; height: 130px; left: 75px; top: -25px; position: absolute; overflow: hidden">
+      <div class="clickable" onclick="location.href='katalogproduk.html'" style="width: 148px; height: 47px; left: 593px; top: 66px; position: absolute; background: #2D3E35; border-radius: 100px"></div>
+      <div class="clickable" onclick="location.href='katalogproduk.html'" style="left: 617px; top: 69px; position: absolute; color: white; font-size: 28px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Katalog</div>
+      <div class="clickable" onclick="location.href='beranda.html'" style="left: 440px; top: 68px; position: absolute; color: black; font-size: 28px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Beranda</div>
+      <div class="clickable" onclick="location.href='perawatan.html'" style="left: 764px; top: 68px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Perawatan</div>
+      <div class="clickable" onclick="location.href='tentangkami.html'" style="left: 954px; top: 70px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Tentang</div>
+      <div class="clickable" onclick="location.href='hubungikami.html'" style="left: 1143px; top: 75px; position: absolute; color: black; font-size: 25px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Hubungi Kami</div>
+    </div>
+    <img class="clickable" onclick="location.href='beranda.html'" style="width: 253px; height: 96px; left: 13px; top: 17px; position: absolute" src="assets/logo_ungu.png" />
+
+    <!-- Judul Halaman -->
+    <div style="width: 385px; height: 51px; left: 638px; top: 208px; position: absolute; color: black; font-size: 40px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Detail Produk</div>
+
+    <!-- Glow Latar Belakang (Ungu Lembut) -->
+    <div style="width: 1129.19px; height: 1061.80px; left: 216.84px; top: 531px; position: absolute; background: rgba(125, 101, 169, 0.25); border-radius: 9999px; filter: blur(100px)"></div>
+
+    <!-- Detail Produk Utama -->
+    <div style="width: 596px; height: 553px; left: 96px; top: 379px; position: absolute; background: white; box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+    <img id="main-product-img" style="width: 362px; height: 485px; left: 213px; top: 410px; position: absolute; object-fit: contain" src="assets/bunga3.png" />
+    <div id="main-product-title" style="width: 381px; height: 61px; left: 937px; top: 379px; position: absolute; color: black; font-size: 54px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">AIRY PEACH</div>
+    <div id="main-product-desc" style="width: 576px; height: 366px; left: 765px; top: 487px; position: absolute; color: black; font-size: 45px; font-family: Inria Serif; font-weight: 400; text-transform: capitalize; word-wrap: break-word">ID Anggrek: Airy Peach<br/>tinggi Plant : ± 30–50 cm  Jenis: Anggrek  diameter Pot:   Jumlah Plant: 3 batang<br/>spike:</div>
+
+    <!-- Rekomendasi Produk -->
+    <div style="width: 496px; height: 51px; left: 530px; top: 1084px; position: absolute; color: black; font-size: 45px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Rekomendasi Produk</div>
+
+    <!-- Card Rekomendasi 1 (Kiri) -->
+    <div class="clickable" onclick="selectProduct('assets/bunga2.png', 'AIRY PEACH', 'Airy Peach')" style="width: 352px; height: 371px; left: 82px; top: 1269px; position: absolute; background: white; box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+    <img class="clickable" onclick="selectProduct('assets/bunga2.png', 'AIRY PEACH', 'Airy Peach')" style="width: 294px; height: 272px; left: 111px; top: 1328px; position: absolute; object-fit: contain" src="assets/bunga2.png" />
+    <div class="clickable" onclick="selectProduct('assets/bunga2.png', 'AIRY PEACH', 'Airy Peach')" style="width: 381px; height: 61px; left: 172px; top: 1664px; position: absolute; color: black; font-size: 35px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Airy Peach</div>
+
+    <!-- Card Rekomendasi 2 (Tengah - Aktif) -->
+    <div class="clickable" onclick="selectProduct('assets/bunga1.png', 'AIRY PEACH', 'Airy Peach')" style="width: 388px; height: 470px; left: 471px; top: 1229px; position: absolute; background: white; box-shadow: 4px 9px 35px rgba(0, 0, 0, 0.35); border-radius: 5px"></div>
+    <img class="clickable" onclick="selectProduct('assets/bunga1.png', 'AIRY PEACH', 'Airy Peach')" style="width: 323px; height: 351px; left: 503px; top: 1288px; position: absolute; object-fit: contain" src="assets/bunga1.png" />
+    <div class="clickable" onclick="selectProduct('assets/bunga1.png', 'AIRY PEACH', 'Airy Peach')" style="width: 381px; height: 61px; left: 584px; top: 1749px; position: absolute; color: black; font-size: 35px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Airy Peach</div>
+
+    <!-- Card Rekomendasi 3 (Kanan) -->
+    <div class="clickable" onclick="selectProduct('assets/bungakriting.png', 'AIRY PEACH', 'Airy Peach')" style="width: 337px; height: 371px; left: 896px; top: 1264px; position: absolute; background: white; box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+    <img class="clickable" onclick="selectProduct('assets/bungakriting.png', 'AIRY PEACH', 'Airy Peach')" style="width: 219px; height: 347px; left: 950px; top: 1276px; position: absolute; object-fit: contain" src="assets/bungakriting.png" />
+    <div class="clickable" onclick="selectProduct('assets/bungakriting.png', 'AIRY PEACH', 'Airy Peach')" style="width: 381px; height: 61px; left: 978px; top: 1669px; position: absolute; color: black; font-size: 35px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Airy Peach</div>
+
+    <!-- Card Rekomendasi 4 (Ujung Kanan) -->
+    <div class="clickable" onclick="selectProduct('assets/mangosteen3.png', 'AIRY PEACH', 'Airy Peach')" style="width: 337px; height: 371px; left: 1261px; top: 1264px; position: absolute; background: white; box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
+    <img class="clickable" onclick="selectProduct('assets/mangosteen3.png', 'AIRY PEACH', 'Airy Peach')" style="width: 250px; height: 330px; left: 1304px; top: 1284px; position: absolute; object-fit: contain" src="assets/mangosteen3.png" />
+    <div class="clickable" onclick="selectProduct('assets/mangosteen3.png', 'AIRY PEACH', 'Airy Peach')" style="width: 381px; height: 61px; left: 1348px; top: 1669px; position: absolute; color: black; font-size: 35px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Airy Peach</div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div style="width: 1440px; height: 600px; left: 0px; top: 1963px; position: absolute; background: #2D3E35"></div>
+    <img style="width: 280px; height: 98px; left: 68px; top: 2076px; position: absolute" src="assets/logo_hijau.png" />
+    <div style="width: 443px; height: 23px; left: 90px; top: 2212px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Indahnya Anggrek, Tumbuh Dari Perhatian</div>
+    <div style="width: 314px; height: 67px; left: 91px; top: 2259px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Menyediakan tanaman anggrek pilihan<br/>untuk mempercantik rumah dan lingkungan Anda.</div>
+
+    <!-- Halaman Lain -->
+    <div style="width: 150px; height: 22px; left: 451px; top: 2086px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">HALAMAN LAIN</div>
+    <div class="clickable" onclick="location.href='beranda.html'" style="width: 97px; height: 22px; left: 451px; top: 2126px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Beranda</div>
+    <div class="clickable" onclick="location.href='katalogproduk.html'" style="width: 97px; height: 23px; left: 451px; top: 2162px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Katalog</div>
+    <div class="clickable" onclick="location.href='perawatan.html'" style="width: 97px; height: 23px; left: 451px; top: 2198px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Perawatan</div>
+    <div class="clickable" onclick="location.href='tentangkami.html'" style="width: 120px; height: 22px; left: 451px; top: 2235px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Tentang</div>
+    <div class="clickable" onclick="location.href='hubungikami.html'" style="width: 97px; height: 22px; left: 451px; top: 2269px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Kontak Kami</div>
+
+    <!-- Kontak -->
+    <div style="width: 149px; height: 22px; left: 671px; top: 2086px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">KONTAK</div>
+    <div style="width: 24px; height: 24px; left: 671px; top: 2134px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 675px; top: 2138px; position: absolute" src="assets/telp.png" />
+    <div style="width: 305px; height: 22px; left: 705px; top: 2138px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">085233766957</div>
+
+    <div style="width: 24px; height: 24px; left: 671px; top: 2180px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 675px; top: 2184px; position: absolute" src="assets/ig.png" />
+    <div style="width: 378px; height: 23px; left: 705px; top: 2182px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">anggrekbondowoso@gmail.com</div>
+
+    <!-- Sosial Media -->
+    <div style="width: 150px; height: 22px; left: 1017px; top: 2086px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">SOSIAL MEDIA</div>
+    <div style="width: 24px; height: 24px; left: 1018px; top: 2134px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 1022px; top: 2138px; position: absolute" src="assets/telp.png" />
+    <div style="width: 306px; height: 22px; left: 1051px; top: 2138px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
+
+    <div style="width: 24px; height: 24px; left: 1018px; top: 2180px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 1022px; top: 2184px; position: absolute" src="assets/ig.png" />
+    <div style="width: 379px; height: 23px; left: 1051px; top: 2182px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
+
+    <!-- Garis Pembatas, Copyright & Floating WA -->
+    <div style="width: 1143.90px; height: 0px; left: 89.75px; top: 2377.02px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+    <div style="width: 473px; height: 22px; left: 90px; top: 2402px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Copyright 2026 Anggrek Bondowoso. All Rights Reserved.</div>
+    <img class="clickable" onclick="window.open('https://wa.me/6285233766957', '_blank')" style="width: 115px; height: 115px; left: 1280px; top: 2376px; position: absolute; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 50px" src="assets/wa.png" />
   </div>
-  <img style="width: 253px; height: 96px; left: 13px; top: 17px; position: absolute" src="assets/logo_ungu.png" />
-
-  <!-- Judul Halaman -->
-  <div style="width: 385px; height: 51px; left: 638px; top: 208px; position: absolute; color: black; font-size: 40px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Detail Produk</div>
-
-  <!-- Glow Latar Belakang (Ungu Lembut) -->
-  <div style="width: 1129.19px; height: 1061.80px; left: 216.84px; top: 531px; position: absolute; background: rgba(125, 101, 169, 0.25); border-radius: 9999px; filter: blur(100px)"></div>
-
-  <!-- Detail Produk Utama -->
-  <div style="width: 596px; height: 553px; left: 96px; top: 379px; position: absolute; background: white; box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
-  <img style="width: 362px; height: 485px; left: 213px; top: 410px; position: absolute; object-fit: contain" src="assets/bunga3.png" />
-  <div style="width: 381px; height: 61px; left: 937px; top: 379px; position: absolute; color: black; font-size: 54px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">AIRY PEACH</div>
-  <div style="width: 576px; height: 366px; left: 765px; top: 487px; position: absolute; color: black; font-size: 45px; font-family: Inria Serif; font-weight: 400; text-transform: capitalize; word-wrap: break-word">ID Anggrek: Airy Peach<br/>tinggi Plant : ± 30–50 cm  Jenis: Anggrek  diameter Pot:   Jumlah Plant: 3 batang<br/>spike:</div>
-
-  <!-- Rekomendasi Produk -->
-  <div style="width: 496px; height: 51px; left: 530px; top: 1084px; position: absolute; color: black; font-size: 45px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Rekomendasi Produk</div>
-
-  <!-- Card Rekomendasi 1 (Kiri) -->
-  <div style="width: 352px; height: 371px; left: 82px; top: 1269px; position: absolute; background: white; box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
-  <img style="width: 294px; height: 272px; left: 111px; top: 1328px; position: absolute; object-fit: contain" src="assets/bunga2.png" />
-  <div style="width: 381px; height: 61px; left: 172px; top: 1664px; position: absolute; color: black; font-size: 35px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Airy Peach</div>
-
-  <!-- Card Rekomendasi 2 (Tengah - Aktif) -->
-  <div style="width: 388px; height: 470px; left: 471px; top: 1229px; position: absolute; background: white; box-shadow: 4px 9px 35px rgba(0, 0, 0, 0.35); border-radius: 5px"></div>
-  <img style="width: 323px; height: 351px; left: 503px; top: 1288px; position: absolute; object-fit: contain" src="assets/bunga1.png" />
-  <div style="width: 381px; height: 61px; left: 584px; top: 1749px; position: absolute; color: black; font-size: 35px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Airy Peach</div>
-
-  <!-- Card Rekomendasi 3 (Kanan) -->
-  <div style="width: 337px; height: 371px; left: 896px; top: 1264px; position: absolute; background: white; box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
-  <img style="width: 219px; height: 347px; left: 950px; top: 1276px; position: absolute; object-fit: contain" src="assets/bungakriting.png" />
-  <div style="width: 381px; height: 61px; left: 978px; top: 1669px; position: absolute; color: black; font-size: 35px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Airy Peach</div>
-
-  <!-- Card Rekomendasi 4 (Ujung Kanan) -->
-  <div style="width: 337px; height: 371px; left: 1261px; top: 1264px; position: absolute; background: white; box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.25); border-radius: 5px"></div>
-  <img style="width: 250px; height: 330px; left: 1304px; top: 1284px; position: absolute; object-fit: contain" src="assets/mangosteen3.png" />
-  <div style="width: 381px; height: 61px; left: 1348px; top: 1669px; position: absolute; color: black; font-size: 35px; font-family: Baskervville; font-weight: 600; word-wrap: break-word">Airy Peach</div>
-
-  <!-- ==================== FOOTER ==================== -->
-  <div style="width: 1440px; height: 600px; left: 0px; top: 1963px; position: absolute; background: #2D3E35"></div>
-  <img style="width: 280px; height: 98px; left: 68px; top: 2076px; position: absolute" src="assets/logo_hijau.png" />
-  <div style="width: 443px; height: 23px; left: 90px; top: 2212px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Indahnya Anggrek, Tumbuh Dari Perhatian</div>
-  <div style="width: 314px; height: 67px; left: 91px; top: 2259px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Menyediakan tanaman anggrek pilihan<br/>untuk mempercantik rumah dan lingkungan Anda.</div>
-
-  <!-- Halaman Lain -->
-  <div style="width: 150px; height: 22px; left: 451px; top: 2086px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">HALAMAN LAIN</div>
-  <div style="width: 97px; height: 22px; left: 451px; top: 2126px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Beranda</div>
-  <div style="width: 97px; height: 23px; left: 451px; top: 2162px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Katalog</div>
-  <div style="width: 97px; height: 23px; left: 451px; top: 2198px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Perawatan</div>
-  <div style="width: 120px; height: 22px; left: 451px; top: 2235px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Tentang</div>
-  <div style="width: 97px; height: 22px; left: 451px; top: 2269px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Kontak Kami</div>
-
-  <!-- Kontak -->
-  <div style="width: 149px; height: 22px; left: 671px; top: 2086px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">KONTAK</div>
-  <div style="width: 24px; height: 24px; left: 671px; top: 2134px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 675px; top: 2138px; position: absolute" src="assets/telp.png" />
-  <div style="width: 305px; height: 22px; left: 705px; top: 2138px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">085233766957</div>
-
-  <div style="width: 24px; height: 24px; left: 671px; top: 2180px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 675px; top: 2184px; position: absolute" src="assets/ig.png" />
-  <div style="width: 378px; height: 23px; left: 705px; top: 2182px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">anggrekbondowoso@gmail.com</div>
-
-  <!-- Sosial Media -->
-  <div style="width: 150px; height: 22px; left: 1017px; top: 2086px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">SOSIAL MEDIA</div>
-  <div style="width: 24px; height: 24px; left: 1018px; top: 2134px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 1022px; top: 2138px; position: absolute" src="assets/telp.png" />
-  <div style="width: 306px; height: 22px; left: 1051px; top: 2138px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
-
-  <div style="width: 24px; height: 24px; left: 1018px; top: 2180px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 1022px; top: 2184px; position: absolute" src="assets/ig.png" />
-  <div style="width: 379px; height: 23px; left: 1051px; top: 2182px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
-
-  <!-- Garis Pembatas, Copyright & Floating WA -->
-  <div style="width: 1143.90px; height: 0px; left: 89.75px; top: 2377.02px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
-  <div style="width: 473px; height: 22px; left: 90px; top: 2402px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Copyright 2026 Anggrek Bondowoso. All Rights Reserved.</div>
-  <img style="width: 115px; height: 115px; left: 1280px; top: 2376px; position: absolute; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 50px" src="assets/wa.png" />
 </div>
+
+<script>
+  function fitToScreen() {
+    const canvas = document.getElementById('page-canvas');
+    const container = document.getElementById('fit-container');
+    const screenW = document.documentElement.clientWidth;
+    if (screenW < 1440) {
+      const ratio = screenW / 1440;
+      canvas.style.transform = `scale(${ratio})`;
+      container.style.justifyContent = 'flex-start';
+      container.style.height = (2562 * ratio) + 'px';
+    } else {
+      canvas.style.transform = 'none';
+      container.style.justifyContent = 'center';
+      container.style.height = '2562px';
+    }
+  }
+  window.addEventListener('resize', fitToScreen);
+  fitToScreen();
+
+  function selectProduct(imgSrc, titleUpper, idName) {
+    document.getElementById('main-product-img').src = imgSrc;
+    document.getElementById('main-product-title').innerText = titleUpper;
+    document.getElementById('main-product-desc').innerHTML = `ID Anggrek: ${idName}<br/>tinggi Plant : ± 30–50 cm  Jenis: Anggrek  diameter Pot:   Jumlah Plant: 3 batang<br/>spike:`;
+    window.scrollTo({ top: 150, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>

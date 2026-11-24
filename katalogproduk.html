@@ -1,160 +1,210 @@
-<div style="width: 1440px; height: 3232px; position: relative; background: white; overflow: hidden">
-  <!-- Logo Header -->
-  <img style="width: 253px; height: 96px; left: 44px; top: 36px; position: absolute" src="assets/logo_ungu.png" />
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Katalog Produk - Anggrek Bondowoso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inria+Serif:wght@400;700&family=Inter:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; overflow-x: hidden; background: #ffffff; }
+    #fit-container { width: 100%; overflow: hidden; display: flex; justify-content: center; }
+    #page-canvas {
+      width: 1440px;
+      height: 3232px;
+      position: relative;
+      background: white;
+      overflow: hidden;
+      transform-origin: top left;
+      flex-shrink: 0;
+    }
+    .clickable { cursor: pointer; transition: opacity 0.2s; }
+    .clickable:hover { opacity: 0.8; }
+  </style>
+</head>
+<body>
+<div id="fit-container">
+  <div id="page-canvas">
+    <!-- Logo Header -->
+    <img class="clickable" onclick="location.href='beranda.html'" style="width: 253px; height: 96px; left: 44px; top: 36px; position: absolute" src="assets/logo_ungu.png" />
 
-  <!-- Glow Latar Belakang -->
-  <div style="width: 1129.19px; height: 1061.80px; left: 101.84px; top: 784px; position: absolute; background: rgba(125, 101, 169, 0.25); border-radius: 9999px; filter: blur(100px)"></div>
+    <!-- Glow Latar Belakang -->
+    <div style="width: 1129.19px; height: 1061.80px; left: 101.84px; top: 784px; position: absolute; background: rgba(125, 101, 169, 0.25); border-radius: 9999px; filter: blur(100px)"></div>
 
-  <!-- Navbar -->
-  <div style="width: 1437px; height: 130px; left: 46px; top: -8px; position: absolute; overflow: hidden">
-    <div style="width: 147px; height: 53px; left: 591px; top: 65px; position: absolute; background: #0E4D4E; border-radius: 100px"></div>
-    <div style="left: 617px; top: 71px; position: absolute; color: white; font-size: 28px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Katalog</div>
-    <div style="left: 440px; top: 68px; position: absolute; color: black; font-size: 28px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Beranda</div>
-    <div style="left: 764px; top: 68px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Perawatan</div>
-    <div style="left: 954px; top: 70px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Tentang</div>
-    <div style="left: 1143px; top: 75px; position: absolute; color: black; font-size: 25px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Hubungi Kami</div>
+    <!-- Navbar -->
+    <div style="width: 1437px; height: 130px; left: 46px; top: -8px; position: absolute; overflow: hidden">
+      <div class="clickable" onclick="location.href='katalogproduk.html'" style="width: 147px; height: 53px; left: 591px; top: 65px; position: absolute; background: #0E4D4E; border-radius: 100px"></div>
+      <div class="clickable" onclick="location.href='katalogproduk.html'" style="left: 617px; top: 71px; position: absolute; color: white; font-size: 28px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Katalog</div>
+      <div class="clickable" onclick="location.href='beranda.html'" style="left: 440px; top: 68px; position: absolute; color: black; font-size: 28px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Beranda</div>
+      <div class="clickable" onclick="location.href='perawatan.html'" style="left: 764px; top: 68px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Perawatan</div>
+      <div class="clickable" onclick="location.href='tentangkami.html'" style="left: 954px; top: 70px; position: absolute; color: black; font-size: 29px; font-family: Inria Serif; font-weight: 400; word-wrap: break-word">Tentang</div>
+      <div class="clickable" onclick="location.href='hubungikami.html'" style="left: 1143px; top: 75px; position: absolute; color: black; font-size: 25px; font-family: Inria Serif; font-weight: 700; word-wrap: break-word">Hubungi Kami</div>
+    </div>
+
+    <!-- Judul Halaman & Section -->
+    <div style="width: 315px; height: 51px; left: 562px; top: 208px; position: absolute; text-align: center; color: black; font-size: 43px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Katalog Produk</div>
+    <div style="width: 451px; height: 51px; left: 56px; top: 1957px; position: absolute; color: black; font-size: 43px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tidak Tersedia</div>
+
+    <!-- ==================== BARIS 1 (TERSEDIA) ==================== -->
+    <!-- Card 1 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 394px; height: 406px; left: 56px; top: 355px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img class="clickable" onclick="location.href='detailkatalog.html'" style="width: 280px; height: 320px; left: 113px; top: 375px; position: absolute; object-fit: contain" src="assets/bunga3.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 268px; top: 709px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 74px; top: 781px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 112px; height: 33px; left: 338px; top: 781px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 74px; top: 814px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- Card 2 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 393px; height: 406px; left: 520px; top: 355px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img class="clickable" onclick="location.href='detailkatalog.html'" style="width: 280px; height: 320px; left: 576px; top: 375px; position: absolute; object-fit: contain" src="assets/bungaungudah.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 731px; top: 709px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 537px; top: 781px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 112px; height: 33px; left: 801px; top: 781px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 537px; top: 814px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- Card 3 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 394px; height: 406px; left: 984px; top: 355px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img class="clickable" onclick="location.href='detailkatalog.html'" style="width: 280px; height: 320px; left: 1041px; top: 375px; position: absolute; object-fit: contain" src="assets/bungakriting.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 1194px; top: 709px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 1000px; top: 781px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 112px; height: 33px; left: 1264px; top: 781px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 1000px; top: 814px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- ==================== BARIS 2 (TERSEDIA) ==================== -->
+    <!-- Card 4 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 394px; height: 406px; left: 56px; top: 886px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img class="clickable" onclick="location.href='detailkatalog.html'" style="width: 280px; height: 320px; left: 113px; top: 906px; position: absolute; object-fit: contain" src="assets/bunga2.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 268px; top: 1240px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 74px; top: 1312px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 112px; height: 33px; left: 338px; top: 1312px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 74px; top: 1345px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- Card 5 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 393px; height: 406px; left: 520px; top: 886px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img class="clickable" onclick="location.href='detailkatalog.html'" style="width: 280px; height: 320px; left: 576px; top: 906px; position: absolute; object-fit: contain" src="assets/bungabunga.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 731px; top: 1240px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 537px; top: 1312px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 112px; height: 33px; left: 801px; top: 1312px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 537px; top: 1345px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- Card 6 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 394px; height: 406px; left: 984px; top: 886px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img class="clickable" onclick="location.href='detailkatalog.html'" style="width: 280px; height: 320px; left: 1041px; top: 906px; position: absolute; object-fit: contain" src="assets/bungaminikaido.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 1194px; top: 1240px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 1000px; top: 1312px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 112px; height: 33px; left: 1264px; top: 1312px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 1000px; top: 1345px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- ==================== BARIS 3 (TERSEDIA) ==================== -->
+    <!-- Card 7 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 394px; height: 406px; left: 56px; top: 1417px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img class="clickable" onclick="location.href='detailkatalog.html'" style="width: 280px; height: 320px; left: 113px; top: 1437px; position: absolute; object-fit: contain" src="assets/bunga1.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 268px; top: 1771px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 74px; top: 1843px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 112px; height: 33px; left: 338px; top: 1843px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 74px; top: 1876px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- Card 8 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 393px; height: 406px; left: 520px; top: 1417px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img class="clickable" onclick="location.href='detailkatalog.html'" style="width: 280px; height: 320px; left: 576px; top: 1437px; position: absolute; object-fit: contain" src="assets/mangosteen2.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 731px; top: 1771px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 537px; top: 1843px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 112px; height: 33px; left: 801px; top: 1843px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 537px; top: 1876px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- Card 9 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 394px; height: 406px; left: 984px; top: 1417px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img class="clickable" onclick="location.href='detailkatalog.html'" style="width: 280px; height: 320px; left: 1041px; top: 1437px; position: absolute; object-fit: contain" src="assets/clayrinebeauty.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 1194px; top: 1771px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 1000px; top: 1843px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 112px; height: 33px; left: 1264px; top: 1843px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 1000px; top: 1876px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- ==================== BARIS 4 (TIDAK TERSEDIA - GRAYSCALE) ==================== -->
+    <!-- Card 10 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 394px; height: 406px; left: 56px; top: 2064px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img style="width: 280px; height: 320px; left: 113px; top: 2084px; position: absolute; object-fit: contain; filter: grayscale(100%)" src="assets/bungabu1.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 268px; top: 2418px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 74px; top: 2490px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 169px; height: 33px; left: 281px; top: 2490px; position: absolute; color: #CC0A0A; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tidak Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 74px; top: 2523px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- Card 11 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 393px; height: 406px; left: 520px; top: 2064px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img style="width: 280px; height: 320px; left: 576px; top: 2084px; position: absolute; object-fit: contain; filter: grayscale(100%)" src="assets/bungabu2.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 731px; top: 2418px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 537px; top: 2490px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 169px; height: 33px; left: 747px; top: 2490px; position: absolute; color: #CC0A0A; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tidak Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 537px; top: 2523px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- Card 12 -->
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 394px; height: 406px; left: 984px; top: 2064px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
+    <img style="width: 280px; height: 320px; left: 1041px; top: 2084px; position: absolute; object-fit: contain; filter: grayscale(100%)" src="assets/bungabu3png.png" />
+    <div class="clickable" onclick="location.href='detailkatalog.html'" style="width: 141px; height: 33px; left: 1194px; top: 2418px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
+    <div style="width: 180px; height: 33px; left: 1000px; top: 2490px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
+    <div style="width: 169px; height: 33px; left: 1202px; top: 2490px; position: absolute; color: #CC0A0A; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tidak Tersedia</div>
+    <div style="width: 244px; height: 33px; left: 1000px; top: 2523px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <div style="width: 1440px; height: 524px; left: 0px; top: 2708px; position: absolute; background: #2D3E35"></div>
+    <img style="width: 260px; height: 91px; left: 114px; top: 2810px; position: absolute" src="assets/logo_hijau.png" />
+    <div style="width: 447px; left: 124px; top: 2932px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Indahnya Anggrek, Tumbuh Dari Perhatian</div>
+    <div style="width: 318px; left: 125px; top: 2972px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Menyediakan tanaman anggrek pilihan<br/>untuk mempercantik rumah dan lingkungan Anda.</div>
+
+    <!-- Halaman Lain -->
+    <div style="width: 150px; left: 489px; top: 2825px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">HALAMAN LAIN</div>
+    <div class="clickable" onclick="location.href='beranda.html'" style="width: 98px; left: 489px; top: 2859px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Beranda</div>
+    <div class="clickable" onclick="location.href='katalogproduk.html'" style="width: 98px; left: 489px; top: 2890px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Katalog</div>
+    <div class="clickable" onclick="location.href='perawatan.html'" style="width: 98px; left: 489px; top: 2921px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Perawatan</div>
+    <div class="clickable" onclick="location.href='tentangkami.html'" style="width: 98px; left: 489px; top: 2951px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">About Us</div>
+    <div class="clickable" onclick="location.href='hubungikami.html'" style="width: 98px; left: 489px; top: 2980px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Contact Us</div>
+
+    <!-- Kontak -->
+    <div style="width: 150px; left: 711px; top: 2825px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">KONTAK</div>
+    <div style="width: 24px; height: 24px; left: 711px; top: 2866px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 715px; top: 2870px; position: absolute" src="assets/telp.png" />
+    <div style="width: 309px; left: 745px; top: 2869px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">085233766957</div>
+
+    <div style="width: 24px; height: 24px; left: 711px; top: 2905px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 715px; top: 2909px; position: absolute" src="assets/ig.png" />
+    <div style="width: 382px; left: 745px; top: 2907px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">anggrekbondowoso@gmail.com</div>
+
+    <!-- Sosial Media -->
+    <div style="width: 150px; left: 1061px; top: 2825px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">SOSIAL MEDIA</div>
+    <div style="width: 24px; height: 24px; left: 1061px; top: 2866px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 1065px; top: 2870px; position: absolute" src="assets/telp.png" />
+    <div style="width: 309px; left: 1095px; top: 2869px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
+
+    <div style="width: 24px; height: 24px; left: 1061px; top: 2905px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
+    <img style="width: 16px; height: 16px; left: 1065px; top: 2909px; position: absolute" src="assets/ig.png" />
+    <div style="width: 382px; left: 1095px; top: 2907px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
+
+    <!-- Garis Pembatas, Copyright & Floating WA -->
+    <div style="width: 1155px; height: 0px; left: 124px; top: 3072px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+    <div style="width: 447px; left: 124px; top: 3093px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Copyright 2026 Anggrek Bondowoso. All Rights Reserved.</div>
+    <img class="clickable" onclick="window.open('https://wa.me/6285233766957', '_blank')" style="width: 106px; height: 106px; left: 1286px; top: 3050px; position: absolute; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 50px" src="assets/wa.png" />
   </div>
-
-  <!-- Judul Halaman & Section -->
-  <div style="width: 315px; height: 51px; left: 562px; top: 208px; position: absolute; text-align: center; color: black; font-size: 43px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Katalog Produk</div>
-  <div style="width: 451px; height: 51px; left: 56px; top: 1957px; position: absolute; color: black; font-size: 43px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tidak Tersedia</div>
-
-  <!-- ==================== BARIS 1 (TERSEDIA) ==================== -->
-  <!-- Card 1 -->
-  <div style="width: 394px; height: 406px; left: 56px; top: 355px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 113px; top: 375px; position: absolute; object-fit: contain" src="assets/bunga3.png" />
-  <div style="width: 141px; height: 33px; left: 268px; top: 709px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 74px; top: 781px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 112px; height: 33px; left: 338px; top: 781px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 74px; top: 814px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- Card 2 -->
-  <div style="width: 393px; height: 406px; left: 520px; top: 355px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 576px; top: 375px; position: absolute; object-fit: contain" src="assets/bungaungudah.png" />
-  <div style="width: 141px; height: 33px; left: 731px; top: 709px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 537px; top: 781px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 112px; height: 33px; left: 801px; top: 781px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 537px; top: 814px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- Card 3 -->
-  <div style="width: 394px; height: 406px; left: 984px; top: 355px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 1041px; top: 375px; position: absolute; object-fit: contain" src="assets/bungakriting.png" />
-  <div style="width: 141px; height: 33px; left: 1194px; top: 709px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 1000px; top: 781px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 112px; height: 33px; left: 1264px; top: 781px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 1000px; top: 814px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- ==================== BARIS 2 (TERSEDIA) ==================== -->
-  <!-- Card 4 -->
-  <div style="width: 394px; height: 406px; left: 56px; top: 886px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 113px; top: 906px; position: absolute; object-fit: contain" src="assets/bunga2.png" />
-  <div style="width: 141px; height: 33px; left: 268px; top: 1240px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 74px; top: 1312px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 112px; height: 33px; left: 338px; top: 1312px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 74px; top: 1345px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- Card 5 -->
-  <div style="width: 393px; height: 406px; left: 520px; top: 886px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 576px; top: 906px; position: absolute; object-fit: contain" src="assets/bungabunga.png" />
-  <div style="width: 141px; height: 33px; left: 731px; top: 1240px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 537px; top: 1312px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 112px; height: 33px; left: 801px; top: 1312px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 537px; top: 1345px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- Card 6 -->
-  <div style="width: 394px; height: 406px; left: 984px; top: 886px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 1041px; top: 906px; position: absolute; object-fit: contain" src="assets/bungaminikaido.png" />
-  <div style="width: 141px; height: 33px; left: 1194px; top: 1240px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 1000px; top: 1312px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 112px; height: 33px; left: 1264px; top: 1312px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 1000px; top: 1345px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- ==================== BARIS 3 (TERSEDIA) ==================== -->
-  <!-- Card 7 -->
-  <div style="width: 394px; height: 406px; left: 56px; top: 1417px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 113px; top: 1437px; position: absolute; object-fit: contain" src="assets/bunga1.png" />
-  <div style="width: 141px; height: 33px; left: 268px; top: 1771px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 74px; top: 1843px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 112px; height: 33px; left: 338px; top: 1843px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 74px; top: 1876px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- Card 8 -->
-  <div style="width: 393px; height: 406px; left: 520px; top: 1417px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 576px; top: 1437px; position: absolute; object-fit: contain" src="assets/mangosteen2.png" />
-  <div style="width: 141px; height: 33px; left: 731px; top: 1771px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 537px; top: 1843px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 112px; height: 33px; left: 801px; top: 1843px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 537px; top: 1876px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- Card 9 -->
-  <div style="width: 394px; height: 406px; left: 984px; top: 1417px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 1041px; top: 1437px; position: absolute; object-fit: contain" src="assets/clayrinebeauty.png" />
-  <div style="width: 141px; height: 33px; left: 1194px; top: 1771px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 1000px; top: 1843px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 112px; height: 33px; left: 1264px; top: 1843px; position: absolute; color: #2A4957; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 1000px; top: 1876px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- ==================== BARIS 4 (TIDAK TERSEDIA - GRAYSCALE) ==================== -->
-  <!-- Card 10 -->
-  <div style="width: 394px; height: 406px; left: 56px; top: 2064px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 113px; top: 2084px; position: absolute; object-fit: contain; filter: grayscale(100%)" src="assets/bungabu1.png" />
-  <div style="width: 141px; height: 33px; left: 268px; top: 2418px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 74px; top: 2490px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 169px; height: 33px; left: 281px; top: 2490px; position: absolute; color: #CC0A0A; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tidak Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 74px; top: 2523px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- Card 11 -->
-  <div style="width: 393px; height: 406px; left: 520px; top: 2064px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 576px; top: 2084px; position: absolute; object-fit: contain; filter: grayscale(100%)" src="assets/bungabu2.png" />
-  <div style="width: 141px; height: 33px; left: 731px; top: 2418px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 537px; top: 2490px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 169px; height: 33px; left: 747px; top: 2490px; position: absolute; color: #CC0A0A; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tidak Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 537px; top: 2523px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- Card 12 -->
-  <div style="width: 394px; height: 406px; left: 984px; top: 2064px; position: absolute; background: white; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25); border-radius: 20px"></div>
-  <img style="width: 280px; height: 320px; left: 1041px; top: 2084px; position: absolute; object-fit: contain; filter: grayscale(100%)" src="assets/bungabu3png.png" />
-  <div style="width: 141px; height: 33px; left: 1194px; top: 2418px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Lihat detail &gt;</div>
-  <div style="width: 180px; height: 33px; left: 1000px; top: 2490px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Airy Peach</div>
-  <div style="width: 169px; height: 33px; left: 1202px; top: 2490px; position: absolute; color: #CC0A0A; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Tidak Tersedia</div>
-  <div style="width: 244px; height: 33px; left: 1000px; top: 2523px; position: absolute; color: black; font-size: 24px; font-family: Baskervville; font-weight: 700; word-wrap: break-word">Rp. 10.000.000</div>
-
-  <!-- ==================== FOOTER ==================== -->
-  <div style="width: 1440px; height: 524px; left: 0px; top: 2708px; position: absolute; background: #2D3E35"></div>
-  <img style="width: 260px; height: 91px; left: 114px; top: 2810px; position: absolute" src="assets/logo_hijau.png" />
-  <div style="width: 447px; left: 124px; top: 2932px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Indahnya Anggrek, Tumbuh Dari Perhatian</div>
-  <div style="width: 318px; left: 125px; top: 2972px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Menyediakan tanaman anggrek pilihan<br/>untuk mempercantik rumah dan lingkungan Anda.</div>
-
-  <!-- Halaman Lain -->
-  <div style="width: 150px; left: 489px; top: 2825px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">HALAMAN LAIN</div>
-  <div style="width: 98px; left: 489px; top: 2859px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Beranda</div>
-  <div style="width: 98px; left: 489px; top: 2890px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Katalog</div>
-  <div style="width: 98px; left: 489px; top: 2921px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Perawatan</div>
-  <div style="width: 98px; left: 489px; top: 2951px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">About Us</div>
-  <div style="width: 98px; left: 489px; top: 2980px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Contact Us</div>
-
-  <!-- Kontak -->
-  <div style="width: 150px; left: 711px; top: 2825px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">KONTAK</div>
-  <div style="width: 24px; height: 24px; left: 711px; top: 2866px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 715px; top: 2870px; position: absolute" src="assets/telp.png" />
-  <div style="width: 309px; left: 745px; top: 2869px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">085233766957</div>
-
-  <div style="width: 24px; height: 24px; left: 711px; top: 2905px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 715px; top: 2909px; position: absolute" src="assets/ig.png" />
-  <div style="width: 382px; left: 745px; top: 2907px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">anggrekbondowoso@gmail.com</div>
-
-  <!-- Sosial Media -->
-  <div style="width: 150px; left: 1061px; top: 2825px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">SOSIAL MEDIA</div>
-  <div style="width: 24px; height: 24px; left: 1061px; top: 2866px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 1065px; top: 2870px; position: absolute" src="assets/telp.png" />
-  <div style="width: 309px; left: 1095px; top: 2869px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
-
-  <div style="width: 24px; height: 24px; left: 1061px; top: 2905px; position: absolute; background: white; border-radius: 9999px; border: 1px black solid"></div>
-  <img style="width: 16px; height: 16px; left: 1065px; top: 2909px; position: absolute" src="assets/ig.png" />
-  <div style="width: 382px; left: 1095px; top: 2907px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">@anggrekbondowoso</div>
-
-  <!-- Garis Pembatas, Copyright & Floating WA -->
-  <div style="width: 1155px; height: 0px; left: 124px; top: 3072px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
-  <div style="width: 447px; left: 124px; top: 3093px; position: absolute; color: #D9D9D9; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Copyright 2026 Anggrek Bondowoso. All Rights Reserved.</div>
-  <img style="width: 106px; height: 106px; left: 1286px; top: 3050px; position: absolute; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 50px" src="assets/wa.png" />
 </div>
+
+<script>
+  function fitToScreen() {
+    const canvas = document.getElementById('page-canvas');
+    const container = document.getElementById('fit-container');
+    const screenW = document.documentElement.clientWidth;
+    if (screenW < 1440) {
+      const ratio = screenW / 1440;
+      canvas.style.transform = `scale(${ratio})`;
+      container.style.justifyContent = 'flex-start';
+      container.style.height = (3232 * ratio) + 'px';
+    } else {
+      canvas.style.transform = 'none';
+      container.style.justifyContent = 'center';
+      container.style.height = '3232px';
+    }
+  }
+  window.addEventListener('resize', fitToScreen);
+  fitToScreen();
+</script>
+</body>
+</html>
